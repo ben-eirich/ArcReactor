@@ -44,6 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArcMain.cs" />
+    <Compile Include="Arithmetic\BitDecoder.cs" />
+    <Compile Include="Arithmetic\BitEncoder.cs" />
+    <Compile Include="Arithmetic\BitPredictor.cs" />
+    <Compile Include="Arithmetic\LZA.cs" />
+    <Compile Include="Arithmetic\UnLZA.cs" />
     <Compile Include="BitLZ\BitBufferFast.cs" />
     <Compile Include="BitLZ\LZB.cs" />
     <Compile Include="BitLZ\UnLZB.cs" />
@@ -69,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ArcFormat.txt" />

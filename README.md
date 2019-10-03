@@ -11,12 +11,12 @@ I currently implement the following algorithms:
 - A byte-based non-entropy-coded compressor.
 - A bit-oriented non-entropy coded compressor. 
 - A standard LZ+Huffman large-window compressor. 
+- A minimal LZ+Arithmetic coded compressor with context modelling.
 
 One of the goals of all of these implementations is to have a concise, "distraction-free" implementation of the core
 idea of each algorithm. As such, common optimizations such as previous match references are not implemented at this time.
 
 The primary TODO list is:
-- Create a minimal LZ+Arithmetic coding algorithm.
 - Create a minimal ROLZ-based algorithm.
 - Implement binary-tree based match finding.
 - Write an optimal parser.
