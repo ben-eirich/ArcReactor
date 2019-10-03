@@ -23,3 +23,16 @@ The primary TODO list is:
 - Try my hand at a more agressive arithmetic coder, possibly integrating standard LZ with ROLZ, and probably 
   utilizing the other common tricks like rep matches or optimal parse.
 - Write a command-line based zip-style archiver interface on top of these algorithms.
+
+To give an idea of the relative performance of these algorithms, as they are currently implemented, at "Max" 
+compression settings, here are some benchmarks for my test corpus, which is 15 files totalling 311,956,892
+uncompressed bytes.
+
+- Deflate: 104,089,206
+- Bytewise compressor: 103,967,229
+- Bitwise compressor: 96,901,942
+- LZ+Huffman compressor: 90,780,029
+- LZ+Arithmetic compressor: 84,206,745
+
+The compression benchmark I use is the silesia corpus, plus enwik8, and in addition I added two "small files" 
+to excercise the small file use case. The two small files are a `README.md` (from sqlite3), and `lua.c`.
