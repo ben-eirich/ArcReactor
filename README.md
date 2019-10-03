@@ -8,8 +8,8 @@ This project is NOT a cool new compression algorithm. It's not better or faster 
 
 I currently implement the following algorithms:
 
-- A byte-based non-entropy-coded compressor.
-- A bit-oriented non-entropy coded compressor. 
+- A byte-aligned non-entropy-coded compressor.
+- A bit-aligned non-entropy coded compressor. 
 - A standard LZ+Huffman large-window compressor. 
 - A minimal LZ+Arithmetic coded compressor with context modelling.
 
